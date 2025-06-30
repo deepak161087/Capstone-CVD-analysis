@@ -48,6 +48,7 @@ Capstone-CVD-analysis/
 │
 ├── doc/
 │ └── Summary.docx # Project summary document
+│ └── Summary_Capstone_1.docx # Capstone 1 summary document
 │
 ├── notebooks/
 │ └── eda_cvd_analysis.ipynb # EDA, visualization, and modeling notebook
