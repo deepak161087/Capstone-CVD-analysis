@@ -44,12 +44,15 @@ Using the **CalEnviroScreen 4.0** dataset, which compiles detailed metrics at th
 Capstone-CVD-analysis/
 │
 ├── data/
-│   └── CalEnviroScreen_4.0_data.csv
+│ └── CalEnviroScreen_4.0_data.csv # Raw dataset
+│
 ├── doc/
-│   └── Summary.docx
+│ └── Summary.docx # Project summary document
+│
 ├── notebooks/
-│   └── eda_cvd_analysis.ipynb
-├── README.md
+│ └── eda_cvd_analysis.ipynb # EDA, visualization, and modeling notebook
+│
+└── README.md # Project overview
 
 ## Instructions
 
