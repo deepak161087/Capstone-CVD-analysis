@@ -29,14 +29,15 @@ Using the **CalEnviroScreen 4.0** dataset, which compiles detailed metrics at th
 
 ## Summary of Findings
 
-- **Education, Poverty, and Ozone levels** emerged as the **strongest predictors** of cardiovascular disease rates across census tracts.
-- Environmental factors like **PM2.5, Lead, and Diesel Particulate Matter** showed moderate relationships, with **interactions between pollution and social factors (e.g., Poverty × PM2.5)** being important.
-- Using **polynomial Ridge regression**, the best model achieved:
-  - **Test R²: 0.450**
-  - **Test RMSE: 3.695**
-- The model captured **nonlinear and interaction effects** across factors while retaining interpretability, identifying how **social vulnerabilities amplify the impact of pollution** on cardiovascular health.
-- Visual exploratory data analysis confirmed **clear positive relationships** between cardiovascular disease rates and variables like **poverty, unemployment, and lower education levels**, while ozone and PM2.5 levels further compound these health burdens.
-
+- The optimized polynomial Ridge regression model (degree 2) with best alpha = 100 demonstrates strong predictive performance:
+  - Cross-validated RMSE: 3.697  
+  - Test RMSE: 3.760  
+  - Test R²: 0.43, indicating that the model explains 43% of the variance in cardiovascular disease rates.
+- **Education** is the most influential predictor, exhibiting both strong linear and nonlinear effects (notably Education²).
+- Other important contributors include **Poverty, Ozone levels, Linguistic Isolation,** and **Unemployment**, highlighting the combined impact of social vulnerabilities and environmental exposures.
+- Significant interaction terms such as **PM2.5 × Groundwater Threats**, **Diesel PM × Poverty**, and **PM2.5 × Traffic** reveal multifactorial influences on cardiovascular disease risk.
+- Negative coefficients for some interactions suggest complex relationships where certain exposure combinations may mitigate or modulate risk.
+- The model’s use of nonlinear and interaction features confirms the multifaceted and nonlinear determinants underlying cardiovascular disease rates.
 ---
 
 ## Repository Structure
